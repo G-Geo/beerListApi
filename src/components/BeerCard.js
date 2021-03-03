@@ -1,7 +1,5 @@
 import React from 'react'
-// import { AiOutlineHeart } from 'react-icons/ai';
-// import { AiTwotoneHeart } from 'react-icons/ai';
-
+import LikeButton from './LikeButton'
 
 function BeerCard(props){
     return(
@@ -12,7 +10,7 @@ function BeerCard(props){
                      
                         <h1>{props.name}</h1>
 
-                        <h1>{props.likeButton}</h1>
+                        <h1>{<LikeButton></LikeButton>}</h1>
 
                         <h3>  ABV:   {props.abv}</h3>
                      
